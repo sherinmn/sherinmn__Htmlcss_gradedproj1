@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab form</title>
+    <link rel="stylesheet" href="../css/labtest.css">
+</head>
+<body>
+    <header>
+        <h1> Lab Test Details </h1>
+    </header>
+    <section class="container">
+        <div class="formcontainer">
+            <form action="">
+                <article id="contact">
+                    <h3>1. Your Contact Details</h3>
+                    <input type="text" title="fullname" placeholder="Full Name" required spellcheck="true">
+                    <input type="text" title="patientid" placeholder="Patient ID">
+                    <br>
+                    <br>
+                    <input type="number" title="contact" min="0000000000" max="9999999999"
+                        placeholder="Contact Number" required spellcheck="true">
+                    <input type="email" title="emailid" placeholder="Email Id" required>
+                </article>
+                <article id="contact">
+                    <h3>2. Address</h3>
+                    <input type="text" title="housenum" placeholder="House Number" required>
+                    <input type="text" title="street" placeholder="Street" required>
+                    <br>
+                    <br>
+                    <input type="text" title="area" placeholder="Area" required>
+                    <input type="text" title="District" placeholder="District" required>
+                    <br>
+                    <h5>District</h5>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Udupi">Udupi</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                    </select>
+                </article>
+                <article id="testtype">
+                    <h3>3. Test Type</h3>
+                    <p>(Check atleast one box without fail)</p>
+                    <input type="checkbox" id="chkbox_cbc" name="cbc" value="CBC">
+                    <label for="chkbox_cbc">CBC</label>
+                    <br>
+                    <input type="checkbox" id="chkbox_urine" name="option2" value="Complete Urine">
+                    <label for="chkbox_urine">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="chkbox_lipid" name="option3" value="Lipid Profile">
+                    <label for="chkbox_lipid">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="chkbox_thyroid" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="chkbox_thyroid">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="chkbox_glucose" name="option5" value="Glucose Test">
+                    <label for="chkbox_glucose">Glucose Test</label>
+                </article>
+                <article id="result">
+                    <h3>4. Do you want hard copy of the result</h3>
+                    <input type="radio" id="radio_yes" name="option" value="Yes" required>
+                    <label for="radio_yes">Yes</label>
+                    <br>
+                    <input type="radio" id="radio_no" name="option" value="No">
+                    <label for="radio_no">No</label>
+                </article>
+                <article id="date">
+                    <h3>Select your comfortable Date and Time</h3>
+                    <label>Date and time </label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                </article>
+                <button>Reset</button>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="imagediv">
+            <img src="images\Lab-Test\lab-test.jpg" alt="">
+        </div>
+    </section>
+    <section>
+
+        <footer>
+            <h5>@Copyright. Only for demonstration purposes</h5>
+        </footer>
+    </section>
+    
+</body>
+</html>
